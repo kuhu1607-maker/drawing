@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(-45deg, #a0d6b4, #fbe7a1, #e0f2f1, #fff9c4);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    margin: 0;
+    padding: 40px;
+    min-height: 100vh;
+    border: 15px double darkred;
+    color: #2c3e50;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header, main, footer {
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 600;
+    color: darkred;
+    padding: 12px 25px;
+    border-radius: 50px;
+    border: 2px solid darkred;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background: white;
+}
+
+nav a:hover {
+    color: white;
+    background: darkred;
+    box-shadow: 0 5px 15px rgba(139, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+img {
+    display: block;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    border: 8px solid white;
+    /* Removed max-width and height:auto to respect your HTML dimensions */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.8);
+    margin-top: 8px;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+    transition: all 0.3s;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: darkred;
+    background: white;
+}
+
+input[type="submit"] {
+    background: linear-gradient(45deg, #8b0000, #ff4d4d);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    display: block;
+    margin: 20px auto;
+}
+
+input[type="submit"]:hover {
+    letter-spacing: 2px;
+    box-shadow: 0 8px 20px rgba(139, 0, 0, 0.3);
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: darkred;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+

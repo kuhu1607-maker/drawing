@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Get in Touch</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page2.html">page2</a></li>
+                <li><a href="page3.html">page3</a></li>
+                <li><a href="page4.html">page4</a></li>
+                <li><a href="page5.html">page5</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contact the Artist</h2>
+            <p>Have a question about a specific art form or want to request a custom piece? Fill out the form below!</p>
+            
+            <form action="#">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required><br><br>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="What is this regarding?"><br><br>
+
+                <p>Preferred Method of Contact:</p>
+                <input type="radio" id="email_opt" name="contact_pref" value="email" checked>
+                <label for="email_opt">Email</label>
+                <input type="radio" id="phone_opt" name="contact_pref" value="phone">
+                <label for="phone_opt">Phone</label><br><br>
+
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" rows="6" placeholder="Type your message here..."></textarea><br><br>
+
+                <input type="checkbox" id="copy" name="copy">
+                <label for="copy">Send me a copy of this message</label><br><br>
+                
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Art Portfolio | Professional Inquiries Only</p>
+    </footer>
+</body>
+</html>
+
